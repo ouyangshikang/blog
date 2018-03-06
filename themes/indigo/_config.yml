@@ -9,12 +9,11 @@ menu:
     text: 主页
     url: /
   archives:
+    text: 全部文章
     url: /archives
   tags:
+    text: 标签
     url: /tags
-  th-list:
-    text: Categories
-    url: /categories
   github:
     url: https://github.com/ouyangshikang
     target: _blank
@@ -35,9 +34,8 @@ email: oyshikang@163.com
 color: '#3F51B5'
 
 # 页面标题
-tags_title: Tags
-archives_title: Archives
-categories_title: Categories
+tags_title: 标签
+archives_title: 全部文章
 
 # 文章截断
 excerpt_render: false
@@ -54,7 +52,7 @@ share: true
 
 # 是否开启打赏，关闭 reward: false
 reward:
-  title: 谢谢大爷~
+  title: 谢谢支持~
   wechat: /img/wechat.jpg     #微信，关闭设为 false
   alipay: /img/alipay.jpg     #支付宝，关闭设为 false
 
@@ -70,7 +68,7 @@ toc:
   list_number: true  # 是否显示数字排序
 
 # 文章页留言内容，hexo中所有变量及辅助函数等均可调用，具体请查阅 hexo.io
-postMessage: 这里可以写作者留言，标签和 hexo 中所有变量及辅助函数等均可调用，示例：<a href="<%- url_for(page.path).replace(/index\.html$/, '') %>" target="_blank" rel="external"><%- page.permalink.replace(/index\.html$/, '') %></a>
+postMessage: 此文为个人学习心得及总结<a href="<%- url_for(page.path).replace(/index\.html$/, '') %>" target="_blank" rel="external"><%- page.permalink.replace(/index\.html$/, '') %></a>
 
 # 站长统计，如要开启，输入CNZZ站点id，如 cnzz: 1255152447
 cnzz: false
@@ -106,9 +104,9 @@ gitment: false
 
 # Valine Comment system. https://valine.js.org
 valine:
-  enable: false # 如果你想使用valine，请将值设置为 true
-  appId:  # your leancloud appId
-  appKey:  # your leancloud appKey
+  enable: true # 如果你想使用valine，请将值设置为 true
+  appId:  0jYPh1dJSJWwSyMNySBBfE9q-gzGzoHsz  # your leancloud appId
+  appKey: PYIklwSHUvA69vPjyChMuoIE # your leancloud appKey
   notify: false # Mail notify
   verify: false # Verify code
   avatar: mm # Gravatar style : mm/identicon/monsterid/wavatar/retro/hide
@@ -125,15 +123,15 @@ valine:
 canonical: false
 
 # 版权起始年份
-since_year: 2015
+since_year: 2017
 
 # 用户页面中作者相关的描述性文字，如不需要设为 false
 about: 用户页面中作者相关的描述性文字，如不需要设为 false
 
 # “不蒜子”访问量统计，详见 http://ibruce.info/2015/04/04/busuanzi/
 visit_counter:
-  site_uv: 站点总访客数：
-  site_pv: 站点总访问量：
+  site_uv: 总访客数：
+  site_pv: 总访问量：
 
 # 动态定义title
 title_change:

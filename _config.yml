@@ -4,18 +4,18 @@
 
 # Site
 title: 心猿意码
-subtitle: 欧阳时康的前端技术学习分享
-description:
+subtitle: 白陀的前端学习分享
+description: 白陀的前端学习分享
 author: baituo
-language:
+language: zh-CN
 timezone:
-
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
 url: http://yoursite.com
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
+favicon: /favicon.ico
 
 # Directory
 source_dir: source
