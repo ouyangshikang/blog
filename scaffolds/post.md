@@ -15,4 +15,5 @@ tags:
     - 数据结构
     - git/github
     - 代码规范
+    - ES6
 ---
