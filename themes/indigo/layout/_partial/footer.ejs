@@ -1,13 +1,13 @@
 <footer class="footer">
     <div class="bottom">
         <%- partial('plugins/site-visit') %>
-        
-        <p><span><%-config.author %> &copy; <%if (theme.since_year && theme.since_year < date(new Date(), 'YYYY')) {%><%- theme.since_year %> - <%}%><%- date(new Date(), 'YYYY') %></span>
+
+        <p><span><%-config.author %> &copy; <%if (theme.since_year && theme.since_year < date(new Date(), 'YYYY')) {%><%- theme.since_year %> - <%}%>2019</span>
             <span>
                 <% if(theme.ICP_license) {%>
                 <a href="http://ouyangshikang.github.io/" target="_blank"><%- theme.ICP_license %></a><br>
                 <% } %>
-                相关链接 
+                相关链接
                 <a href="https://juejin.im/" target="_blank">掘金</a>
                 <a href="https://segmentfault.com/" target="_blank">segmentfault</a>
             </span>
