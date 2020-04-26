@@ -18,21 +18,21 @@ date: 2017-05-21 23:12:06
 
 ### 实现
 #### 浅拷贝
-在Javascript 中，将一个对象赋值给一个变量其实只是将这个对象的引用拷贝了一份     
+在Javascript 中，将一个对象赋值给一个变量其实只是将这个对象的引用拷贝了一份
 假设这么一段代码
 ``` javascript
-var man = {   
-     name: 'aepkill',   
+var man = {
+     name: 'aepkill',
      sex: 'male'
 };
 var superMan = man;
 ```
-![](http://ovc5dgvpb.bkt.clouddn.com/8EDD1233-20C2-45BF-BADC-D1ACB0C14640.png)  
+![](https://st-gdx.dancf.com/gaodingx-dev/73047376/video-cliper/20200426-173241-ba43.png)
 > 并没有创建一个新的对象实体，而是仅仅拷贝了这种引用关系。
 所以假设执行 man.name = ‘aotuman’ ，那么superMan.name的值也会变成 ‘aotuman’，因为其实他们引用的是同一个对象实体。
 
 很多场景下并不希望出现像上面中那样， 我们希望能使两个变量相互独立，不再引用同一个对象
-这很容易实现，只需要申明一个新的对象，然后将这个对象的所有字段原封不动拷贝过去即可：   
+这很容易实现，只需要申明一个新的对象，然后将这个对象的所有字段原封不动拷贝过去即可：
 
 ``` javascript
 function copy(obj){
@@ -60,7 +60,7 @@ console.log(hero.name); // java
 
 
 #### 深拷贝
-上面已经完成了基本的拷贝，但是只拷贝了第一层的关系，如果对象不止一层的话，上面的函数就不适用了： 
+上面已经完成了基本的拷贝，但是只拷贝了第一层的关系，如果对象不止一层的话，上面的函数就不适用了：
 
 ``` javascript
 var people = {
