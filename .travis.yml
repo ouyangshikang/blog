@@ -46,7 +46,6 @@ deploy:
   skip_cleanup: true
   github_token: $GH_TOKEN
   keep_history: true
-  local-dir: public
   on:
     branch: master
 
