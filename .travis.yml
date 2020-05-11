@@ -14,12 +14,14 @@ cache:
   yarn: true
 
 before_install:
-  - yarn add hexo-cli
+  - export TZ='Asia/Shanghai'
 
 install:
+  - yarn global add hexo-cli
   - yarn install
 
 # The script to execute
 script:
   - hexo clean
-  - hexo generate --deploy
+  - hexo generate
+  - hexo deploy
