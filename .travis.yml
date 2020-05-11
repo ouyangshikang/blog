@@ -1,0 +1,25 @@
+# Designated language
+language: node_js
+
+# Specify the node version
+node_js:
+  - lts/*
+
+# Perform builds only on the specified branch
+branches:
+  only:
+    - master
+
+cache:
+  yarn: true
+
+before_install:
+  - yarn install hexo-cli
+
+install:
+  - yarn install
+
+# The script to execute
+script:
+  - hexo clean
+  - hexo generate --deploy
