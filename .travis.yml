@@ -33,8 +33,6 @@ before_script:
   - git config user.email 'baituo@gaoding.com'
   # 替换配置文件中 github 的 repo url，为 push 做准备,GH_TOKEN为 travis 后台配置的变量
   - sed -i'' "s~git@github.com:~https://${GH_TOKEN}@github.com/~" _config.yml
-  # Deploy history 保留生成静态博客的commit历史
-  - git clone --branch=master --single-branch ${URL_REPO} .deploy_git
 
 # The script to execute
 script:
