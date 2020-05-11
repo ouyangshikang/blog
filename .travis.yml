@@ -40,6 +40,7 @@ script:
   - hexo generate
   # - hexo deploy
 
+# Github page deploy
 deploy:
   provider: pages
   skip_cleanup: true
