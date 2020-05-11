@@ -93,7 +93,7 @@ less:
 # use gitalk https://github.com/gitalk/gitalk
 gitalk:
   owner: ouyangshikang
-  repo: https://github.com/ouyangshikang/ouyangshikang.github.io
+  repo: ouyangshikang.github.io
   client_id: b338ec358e7a8190419d
   client_secret: 540d966e19be635634bc4c9118b65d02a642b7fe
 
