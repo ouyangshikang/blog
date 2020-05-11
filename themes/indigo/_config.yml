@@ -90,21 +90,16 @@ less:
     - source/css/style.less
 
 # 以下评论插件开启一个即可
-# 是否开启 disqus
-disqus_shortname: false
-# 是否开启友言评论, 填写友言用户id
-uyan_uid: false
-# 是否使用 gitment，https://github.com/imsun/gitment
-gitment: false
-# gitment:
-#   owner:
-#   repo:
-#   client_id:
-#   client_secret:
+# use gitalk https://github.com/gitalk/gitalk
+gitalk:
+  owner: ouyangshikang
+  repo: https://github.com/ouyangshikang/ouyangshikang.github.io
+  client_id: b338ec358e7a8190419d
+  client_secret: 540d966e19be635634bc4c9118b65d02a642b7fe
 
 # Valine Comment system. https://valine.js.org
 valine:
-  enable: true # 如果你想使用valine，请将值设置为 true
+  enable: false # 如果你想使用valine，请将值设置为 true
   appId:  0jYPh1dJSJWwSyMNySBBfE9q-gzGzoHsz  # your leancloud appId
   appKey: PYIklwSHUvA69vPjyChMuoIE # your leancloud appKey
   notify: false # Mail notify
