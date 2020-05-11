@@ -14,7 +14,7 @@ cache:
   yarn: true
 
 before_install:
-  - yarn install hexo-cli
+  - yarn add hexo-cli
 
 install:
   - yarn install
