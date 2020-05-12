@@ -40,12 +40,14 @@ script:
   - hexo generate
   # - hexo deploy
 
-# Github page deploy
+# Github page deploy when master change
 deploy:
   provider: pages
   skip_cleanup: true
   github_token: $GH_TOKEN
   keep_history: true
+  local_dir: public
+  repo: ouyangshikang/ouyangshikang.github.io
   target_branch: master
   on:
     branch: master
