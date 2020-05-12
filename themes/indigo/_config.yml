@@ -9,7 +9,7 @@ menu:
     text: 主页
     url: /
   archives:
-    text: 全部文章
+    text: 归档
     url: /archives
   tags:
     text: 标签
@@ -19,11 +19,11 @@ menu:
     target: _blank
 
 # 你的头像url
-avatar: /img/avatar.jpg
+avatar: https://st-gdx.dancf.com/gaodingx/193/configs/system/20200512-213635-63f5.jpg
 # avatar link
 avatar_link: /
 # 头像背景图
-brand: /img/brand.jpg
+brand: https://st-gdx.dancf.com/gaodingx/193/configs/system/20200512-213721-704e.jpg
 # favicon
 favicon: /favicon.ico
 
@@ -35,7 +35,7 @@ color: '#3F51B5'
 
 # 页面标题
 tags_title: 标签
-archives_title: 全部文章
+archives_title: 归档
 
 # 文章截断
 excerpt_render: false
@@ -53,8 +53,8 @@ share: true
 # 是否开启打赏，关闭 reward: false
 reward:
   title: 谢谢支持~
-  wechat: /img/wechat.jpg     #微信，关闭设为 false
-  alipay: /img/alipay.jpg     #支付宝，关闭设为 false
+  wechat: https://st-gdx.dancf.com/gaodingx/193/configs/system/20200512-213818-f454.jpg     #微信，关闭设为 false
+  alipay: https://st-gdx.dancf.com/gaodingx/193/configs/system/20200512-213751-22c1.jpg    #支付宝，关闭设为 false
 
 # 是否开启搜索
 search: true

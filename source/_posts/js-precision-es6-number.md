@@ -1,8 +1,8 @@
 ---
 title: js数值精度问题及es6数值的拓展
 tags:
-  - JavaScript
-  - ES6
+  - javascript
+
 date: 2018-03-1 22:20:35
 ---
 ***

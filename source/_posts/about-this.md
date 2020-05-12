@@ -1,8 +1,8 @@
 ---
 title: 搞懂this及相关问题
 tags:
-  - JavaScript
-  - 面试题
+  - javascript
+
 date: 2017-05-12 22:49:39
 ---
 
@@ -22,19 +22,19 @@ let bar = obj.foo;
 obj.foo() // 打印出的 this 是 obj
 bar() // 打印出的 this 是 window
 ```
-为什么呢？       
-解决这类问题需要理解函数的调用问题，js里有三种函数的调用方式：    
+为什么呢？
+解决这类问题需要理解函数的调用问题，js里有三种函数的调用方式：
 - func(a,b);
 - obj.child.method(a,b);
-- func.call(context,a,b);    
-func.apply(context,[a,b]); //context为函数执行环境的上下文    
+- func.call(context,a,b);
+func.apply(context,[a,b]); //context为函数执行环境的上下文
 
 但其实前两种都可以转化为第三种(以call的形式)：
 
 - func.call(undefine, a,b);
 - obj.child.method.call(obj.child,a,b);
 
-所以，栗子可以吃了:       
+所以，栗子可以吃了:
 ```javascript
 obj.foo(); ----->   obj.foo.call(obj);
 bar();     ----->  bar.call(undefined);
@@ -49,9 +49,9 @@ bar();     ----->  bar.call(undefined);
 ### 绑定this的方法(call,apply,bind的区别)
 
 1. call与apply两者对于参数的接受方式不同,call接受的是参数列表，apply接受的是一个包含多个参数的数组
-- apply的语法： ``fun.apply(thisArg[, argsArray])``   
+- apply的语法： ``fun.apply(thisArg[, argsArray])``
 如xxx.apply(undefined, [1,2,3])
-- call的语法：``fun.call(thisArg[, arg1[, arg2[, ...])``   
+- call的语法：``fun.call(thisArg[, arg1[, arg2[, ...])``
 如xxx.call(undefined, 1,2,3])
 
 2. ``bind``和call,apply的作用一样，动态指定this,不同在于返回值,bind可以强制指定this到某个对象，还可以绑定原函数的参数,然后返回一个新函数，之后不会修改，即预设了对象的this和参数
@@ -69,7 +69,7 @@ counter.inc()counter.count // 1
  * counter.inc内部的this，默认指向counter对象。
  * 如果将这个方法赋值给另一个变量，就会出错,如下：
  */
- 
+
 var counter = {
   count: 0,
   inc: function () {

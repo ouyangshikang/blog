@@ -1,8 +1,8 @@
 ---
 title: javascript中的深拷贝和浅拷贝
 tags:
-  - JavaScript
-  - 面试题
+  - javascript
+
 date: 2017-05-21 23:12:06
 ---
 ### 区别

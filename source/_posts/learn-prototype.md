@@ -1,8 +1,8 @@
 ---
 title: 原型链的理解
 tags:
-  - JavaScript
-  - 面试题
+  - javascript
+
 date: 2017-05-10 23:26:27
 ---
 ### 先给出个栗子吃
