@@ -32,22 +32,23 @@ before_script:
   - git config user.name 'baituo'
   - git config user.email 'baituo@gaoding.com'
   # 替换配置文件中 github 的 repo url，为 push 做准备,GH_TOKEN为 travis 后台配置的变量
-  - sed -i'' "s~git@github.com:~https://${GH_TOKEN}@github.com/~" _config.yml
+  # - sed -i'' "s~git@github.com:~https://${GH_TOKEN}@github.com/~" _config.yml
 
 # The script to execute
 script:
   - hexo clean
   - hexo generate
-  - hexo deploy
+  # - hexo deploy
 
 # Github page deploy
-# deploy:
-#   provider: pages
-#   skip_cleanup: true
-#   github_token: $GH_TOKEN
-#   keep_history: true
-#   on:
-#     branch: master
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GH_TOKEN
+  keep_history: true
+  target_branch: master
+  on:
+    branch: master
 
 # Configure to send notifications when the build fails
 notifications:

@@ -1,5 +1,5 @@
 ---
-title: js数值精度问题及es6数值的拓展test
+title: js数值精度问题及es6数值的拓展
 tags:
   - JavaScript
   - ES6
