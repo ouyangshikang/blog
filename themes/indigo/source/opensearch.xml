@@ -3,6 +3,6 @@
     <InputEncoding>UTF-8</InputEncoding>
     <ShortName>心猿意码</ShortName>
     <Description>心猿意码搜索</Description>
-    <Image height="16" width="16" type="image/x-icon">http://frontman.cn/favicon.ico</Image>
-    <Url type="text/html"  method="get" template="http://frontman.cn/templates?q={searchTerms}"/>
+    <Image height="16" width="16" type="image/x-icon">https://frontman.cn/favicon.ico</Image>
+    <Url type="text/html"  method="get" template="https://frontman.cn/templates?q={searchTerms}"/>
 </OpenSearchDescription>
