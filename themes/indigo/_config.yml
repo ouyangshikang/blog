@@ -83,6 +83,10 @@ tajs: false
 google_analytics: UA-166622440-1
 google_site_verification: false
 
+# google 站点地图
+sitemap:
+  path: sitemap.xml
+
 # less
 less:
   compress: true
